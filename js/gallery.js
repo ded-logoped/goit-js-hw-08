@@ -66,7 +66,8 @@ const images = [
 
 const gallery = document.querySelector(".gallery");
 const galleryPoint = images
-  .map((image) => (
+  .map(
+    (image) => `
     <li class="gallery-item">
       <a class="gallery-link" href="${image.original}">
         <img
@@ -77,7 +78,9 @@ const galleryPoint = images
         />
       </a>
     </li>
-  ))
+  `
+  )
+
   .join("");
 gallery.insertAdjacentHTML("beforeend", galleryPoint);
 
