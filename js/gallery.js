@@ -88,7 +88,7 @@ gallery.addEventListener("click", (event) => {
     const bigImageUrl = event.target.dataset.source;
 
     const modalWindow = basicLightbox.create(
-      '<img src="${bigImageUrl}" width="800" height="600"></img>'
+      '<img src="${bigImageUrl}"></img>'
     );
     modalWindow.show();
   }
